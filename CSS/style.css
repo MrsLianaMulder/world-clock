@@ -1,4 +1,8 @@
 body {
-  background: black;
+  background: rgb(192, 187, 187);
   color: white;
+  text-align: center;
+}
+footer {
+  text-align: center;
 }
