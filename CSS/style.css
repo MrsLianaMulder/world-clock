@@ -1,8 +1,11 @@
 body {
   background: rgb(192, 187, 187);
   color: white;
-  text-align: center;
+}
+h1 {
+  color: black;
 }
 footer {
-  text-align: center;
+  font-size: 12px;
+  padding-top: 60px;
 }
