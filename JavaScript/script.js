@@ -18,6 +18,14 @@ function updateTime() {
   londonTimeElement.innerHTML = londonTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
+  //Johannesburg//
+  let jElement = document.querySelector("#johannesburg");
+  let jDateElement = jElement.querySelector(".date");
+  let jTimeElement = jElement.querySelector(".time");
+  let jTime = moment().tz("Africa/Johannesburg");
+
+  jDateElement.innerHTML = jTime.format("MMMM Do YYYY");
+  jTimeElement.innerHTML = jTime.format("h:mm:ss [<small>]A[</small>]");
 }
 function updateCity(event) {
   let cityTimeZone = event.target.value;
@@ -36,6 +44,7 @@ function updateCity(event) {
             "h:mm:ss"
           )}<small> ${cityTime.format("A")}</small></div>
         </div>
+        <a href="index.html"><<</a>
   `;
 }
 updateTime();
