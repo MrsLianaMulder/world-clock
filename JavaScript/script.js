@@ -8,14 +8,14 @@ function updateTime() {
   sfDateElement.innerHTML = sfTime.format("MMMM Do YYYY");
   sfTimeElement.innerHTML = sfTime.format("h:mm:ss [<small>]A[</small>]");
 
-  //Boston//
-  let bostonElement = document.querySelector("#boston");
-  let bostonDateElement = bostonElement.querySelector(".date");
-  let bostonTimeElement = bostonElement.querySelector(".time");
-  let bostonTime = moment().tz("America/new_york");
+  //London//
+  let londonElement = document.querySelector("#london");
+  let londonDateElement = londonElement.querySelector(".date");
+  let londonTimeElement = londonElement.querySelector(".time");
+  let londonTime = moment().tz("Europe/London");
 
-  bostonDateElement.innerHTML = bostonTime.format("MMMM Do YYYY");
-  bostonTimeElement.innerHTML = bostonTime.format(
+  londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
+  londonTimeElement.innerHTML = londonTime.format(
     "h:mm:ss [<small>]A[</small>]"
   );
 }
